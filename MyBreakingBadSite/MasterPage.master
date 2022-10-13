@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MyBreakingBadSite.pages.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+  
+    <style>
+    * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: montserrat;
+            background: #f2f2f2;
+
+        }
+        nav{
+            background: #063247;
+            height: 80px;
+            width: 100%;
+        }
+        label.logo {
+            color: tomato;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: tomato;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+
+        }
+        a.active,a:hover{
+            background: #900C3F;
+            transition: .5s;
+        }
+        
+
+    </style>
+    
+
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~ Head Place Holder - שומר מקום לחלק העיצובי ~~~~~~~~~~~~~~ -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+      <nav>  
+          
+              <i class="fas fa-bars"></i>
+
+          </label>
+        <label class="logo"> Foodies</label>   
+    <ul>
+       <li><a href="Mainpage.aspx">דף הבית</a></li>
+       <li><a href="recipes.aspx">מתכונים</a>
+           <ul>
+               <li><a href="#">מתכונים בשריים</a></li>
+               <li><a href="#">מתכונים חלביים</a></li>
+           </ul>
+
+
+       </li>
+       <li><a href="ingredients.aspx">מרכיבים</a></li>
+       <li><a href="signup.aspx">הירשם לאתר</a></li>
+       <li><a href="login.aspx">התחבר</a></li>
+       <li><a href="Scheduele.aspx"> מערכת שעות הסדנה</a></li>
+    </ul>
+     </nav> 
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+                <label class="logo"> שובר שורות</label>   
+    
+
+            
+            </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
