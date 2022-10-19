@@ -52,7 +52,7 @@
 
         <h2 style="text-align:center"> מתכונים שהאתר מציע כעת:</h2>
 
-          <ol style="text-align:right; font-size: 30px;" type="1">
+          <ol>
               <li><a href="recipes.aspx#makingcake"> הכנת עוגה בסיסית</a></li>
              <li><a href="recipes.aspx#makingknafeh">הכנת כנאפה מתוק</a></li>
               <li><a href="recipes.aspx#refaeloballs">הכנת כדורי רפאלו</a></li>
