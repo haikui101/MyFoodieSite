@@ -15,28 +15,12 @@
             background-color: honeydew;
         }
 
-        .his {
+        .channel12 {
             background-color: lightpink;
         }
 
-        .cs {
+        .channel5-7 {
             background-color: lightgreen;
-        }
-
-        .bible {
-            background-color: #ddaaaa;
-        }
-
-        .math {
-            background-color: orange;
-        }
-
-        .hebrew {
-            background-color: moccasin;
-        }
-
-        .law {
-            background-color: lightblue;
         }
 
         .dayhour {
@@ -62,41 +46,41 @@
         </tr>
         <tr>
             <td class="dayhour">9:00-9:45</td>
-            <td class="his" rowspan="1">12 ערוץ</td>
-            <td class="his" rowspan="1">במטבח עם אמא</td>
-            <td class="his" rowspan="2">באנו לאפות</td>
-            <td class="his" rowspan="2">מיני שף</td>
-            <td class="his" rowspan="1">במטבח עם אמא</td>
-            <td class="his" rowspan="2">אופים עולם</td>
-            <td class="his" rowspan="1">מיני שף</td>
-            <td class="his" rowspan="2">במטבח עם אמא</td>
+            <td class="channel12" rowspan="1">12 ערוץ</td>
+            <td class="channel12" rowspan="1">במטבח עם אמא</td>
+            <td class="channel12" rowspan="2">באנו לאפות</td>
+            <td class="channel12" rowspan="2">מיני שף</td>
+            <td class="channel12" rowspan="1">במטבח עם אמא</td>
+            <td class="channel12" rowspan="2">אופים עולם</td>
+            <td class="channel12" rowspan="1">מיני שף</td>
+            <td class="channel12" rowspan="2">במטבח עם אמא</td>
            
         </tr>
         <tr>
             <td class="dayhour">09:45-010:30</td>
-            <td class="his" rowspan="1">ערוץ 5</td>
-            <td class="his" rowspan="1">אופים עולם</td>
-            <td class="his" rowspan="1">באנו לאפות</td>
-            <td class="his" rowspan="1">באנו לאפות</td>
+            <td class="channel12" rowspan="1">ערוץ 5</td>
+            <td class="channel12" rowspan="1">אופים עולם</td>
+            <td class="channel12" rowspan="1">באנו לאפות</td>
+            <td class="channel12" rowspan="1">באנו לאפות</td>
             
         </tr>
         <tr>
             <td class="dayhour">010:30-11:30</td>
-            <td class="cs" rowspan="2"> ערוץ 7</td>
-            <td class="cs" rowspan="1">אוכל של בית</td>
-            <td class="cs" rowspan="1">הכי טרי שיש</td>
-            <td class="cs" rowspan="2">אוכל של בית</td>
-            <td class="cs" rowspan="2">טעם של פעם</td>
-            <td class="cs" rowspan="1">5 דקות עבודה</td>
-            <td class="cs" rowspan="2">סופר שף</td>
-            <td class="cs" rowspan="2">אוכל של בית</td>
+            <td class="channel5-7" rowspan="2"> ערוץ 7</td>
+            <td class="channel5-7" rowspan="1">אוכל של בית</td>
+            <td class="channel5-7" rowspan="1">הכי טרי שיש</td>
+            <td class="channel5-7" rowspan="2">אוכל של בית</td>
+            <td class="channel5-7" rowspan="2">טעם של פעם</td>
+            <td class="channel5-7" rowspan="1">5 דקות עבודה</td>
+            <td class="channel5-7" rowspan="2">סופר שף</td>
+            <td class="channel5-7" rowspan="2">אוכל של בית</td>
       
         </tr>
         <tr>
             <td class="dayhour">11:30-12:10</td>
-            <td class="cs" rowspan="1">5 דקות עבודה</td>
-            <td class="cs" rowspan="1">טעם של פעם</td>
-            <td class="cs" rowspan="1">הכי טרי שיש</td>
+            <td class="channel5-7" rowspan="1">5 דקות עבודה</td>
+            <td class="channel5-7" rowspan="1">טעם של פעם</td>
+            <td class="channel5-7" rowspan="1">הכי טרי שיש</td>
         </tr>
          </table>
 </asp:Content>
