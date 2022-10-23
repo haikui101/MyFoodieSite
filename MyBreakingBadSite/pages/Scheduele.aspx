@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="הסדנה" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Scheduele.aspx.cs" Inherits="MyBreakingBadSite.pages.Scheduele" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <style>
     <style>
         table {
             border: 1px solid red;
@@ -12,7 +13,7 @@
 
         .safrut {
             background-color: honeydew;
-        }   
+        }
 
         .his {
             background-color: lightpink;
@@ -43,16 +44,14 @@
             color:#337ab7
         }
     </style>
-
-
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table>
+     <table width="1200" height="400">
         <tr>
         </tr>
         <tr>
             <th class="dayhour">שעה</th>
+            <th class="dayhour">ערוץ</th>
             <th class="dayhour">שיעור</th>
             <th class="dayhour">ראשון</th>
             <th class="dayhour">שני</th>
@@ -62,30 +61,43 @@
             <th class="dayhour">שישי</th>
         </tr>
         <tr>
-            <td class="dayhour">08:00-08:45</td>
-            <td class="his" rowspan="4">היסטוריה</td>
-            <td class="cs" rowspan="2">מדעי המחשב</td>
-            <td class="math" rowspan="2">מתמטיקה</td>
-            <td class="bible" rowspan="3">תנ"ך</td>
-            <td class="hebrew">עברית</td>
-            <td class="law" rowspan="4">משפטים</td>
-            <td class="safrut" rowspan="2">ספרות</td>
+            <td class="dayhour">9:00-9:45</td>
+            <td class="his" rowspan="1">12 ערוץ</td>
+            <td class="his" rowspan="1">במטבח עם אמא</td>
+            <td class="his" rowspan="2">באנו לאפות</td>
+            <td class="his" rowspan="2">מיני שף</td>
+            <td class="his" rowspan="1">במטבח עם אמא</td>
+            <td class="his" rowspan="2">אופים עולם</td>
+            <td class="his" rowspan="1">מיני שף</td>
+            <td class="his" rowspan="2">במטבח עם אמא</td>
+           
         </tr>
         <tr>
-            <td class="dayhour">08:45-09:30</td>
-            <td class="cs" rowspan="2">מדעי המחשב</td>
+            <td class="dayhour">09:45-010:30</td>
+            <td class="his" rowspan="1">ערוץ 5</td>
+            <td class="his" rowspan="1">אופים עולם</td>
+            <td class="his" rowspan="1">באנו לאפות</td>
+            <td class="his" rowspan="1">באנו לאפות</td>
+            
         </tr>
         <tr>
-            <td class="dayhour">09:45-10:30</td>
-            <td class="math" rowspan="2">מתמטיקה</td>
-            <td class="cs" rowspan="2">מדעי המחשב</td>
-            <td class="hebrew" rowspan="2">עברית</td>
+            <td class="dayhour">010:30-11:30</td>
+            <td class="cs" rowspan="2"> ערוץ 7</td>
+            <td class="cs" rowspan="1">אוכל של בית</td>
+            <td class="cs" rowspan="1">הכי טרי שיש</td>
+            <td class="cs" rowspan="2">אוכל של בית</td>
+            <td class="cs" rowspan="2">טעם של פעם</td>
+            <td class="cs" rowspan="1">5 דקות עבודה</td>
+            <td class="cs" rowspan="2">סופר שף</td>
+            <td class="cs" rowspan="2">אוכל של בית</td>
+      
         </tr>
         <tr>
-            <td class="dayhour">10:30-11:10</td>
-            <td class="cs" rowspan="2">מדעי המחשב</td>
-            <td class="bible">תנ"ך</td>
+            <td class="dayhour">11:30-12:10</td>
+            <td class="cs" rowspan="1">5 דקות עבודה</td>
+            <td class="cs" rowspan="1">טעם של פעם</td>
+            <td class="cs" rowspan="1">הכי טרי שיש</td>
         </tr>
-
-    </table>
+         </table>
 </asp:Content>
+
