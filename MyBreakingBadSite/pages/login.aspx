@@ -165,12 +165,7 @@ i span{
 }
 </style>
 
-    <head>
-      <meta charset="utf-8">
-      <title>Transparent Login Form HTML CSS</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-   </head>
+   
     
 
 </asp:Content>
@@ -196,7 +191,8 @@ i span{
                   <b><a href="#" style="color: skyblue">?שכחת סיסמה</a></b>
                </div>
                <div class="field">
-                  <input type="submit" id="validation" value="התחברות">
+                  <input type="submit" id="submit" value="התחברות">
+                   <input type="reset" />
                </div>
             </form>
             <div class="login">
@@ -215,7 +211,7 @@ i span{
                <a href="#">הרשם עכשיו</a>
                 <p>
                     הפרטים שלך הם: <br />
-                    אימייל: @email <br />
+                    <%= sts %>
 
 
 

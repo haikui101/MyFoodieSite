@@ -9,19 +9,20 @@ using System.Xml.Linq;
 
 namespace MyBreakingBadSite.pages
 {
+    
     public partial class WebForm2 : System.Web.UI.Page
     {
-        public string st = "";
+        public string sts = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             
-            if (Request.Form["validation"] != null)
+            if (Request.Form["submit"] != null)
             {
                 string email = Request.Form["email"];
                 string password = Request.Form["password"];
 
-                <
-               
+                sts = $"<p> email: {email}, password: {password}</p>";
+
 
             }
 
