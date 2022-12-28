@@ -2,7 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 
-    <!-- Style -->
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
 *{
@@ -11,6 +10,18 @@
   box-sizing: border-box;
   user-select: none;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: coral;}
 .bg-img{
   background: url('../images/Food-Background.jpg');
   height: 100vh;
@@ -170,7 +181,7 @@ i span{
 
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" onsubmit="return chkForm();">
 
     <html dir="ltr">
         <body>
@@ -182,8 +193,13 @@ i span{
                   <span class="fa fa-user"></span>
                   <input type="text" name="email" id="email" required placeholder="כתובת אימייל">
                </div>
-               <div class="field space">
-                  <span class="fa fa-lock"></span>
+                <div></div>
+                <div class="field space">
+                  <span class="fa fa-user"></span>
+                  <input type="text" name="username" id="username" required placeholder="שם משתמש">
+               </div>
+                <div class="field space">
+                  <span class="fa fa-user"></span>
                   <input type="password" class="pass-key"  name="password" id="password" required placeholder="סיסמה">
                   <span class="show">חשוף</span>
                </div>
@@ -191,7 +207,7 @@ i span{
                   <b><a href="#" style="color: skyblue">?שכחת סיסמה</a></b>
                </div>
                <div class="field">
-                  <input type="submit" id="submit" value="התחברות">
+                  <input type="submit" id="submit" name="submit" value="התחברות">
                    <input type="reset" />
                </div>
             </form>
@@ -211,9 +227,29 @@ i span{
                <a href="#">הרשם עכשיו</a>
                 <p>
                     הפרטים שלך הם: <br />
-                    <%= sts %>
+                    <%= st %>
+                    <script src="js/CheckMyForm.js">    </script>
 
+<%--<table>
+  <tr>
+    <th>First name</th>
+    <th>email</th>
+    <th>password</th>
+  </tr>
+  <tr>
 
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>--%>
 
                 </p>
 
@@ -236,6 +272,9 @@ i span{
          });
       </script>
 
+
         </body>
+
+
     </html>
 </asp:Content>
